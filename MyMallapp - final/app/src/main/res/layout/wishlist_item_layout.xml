@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/phone_3" />
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Google Pixel XL 2 (Mirror Black,128GB)"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/product_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/free_coupon_icon"
+        android:layout_width="15dp"
+        android:layout_height="16dp"
+        android:tint="#8000FF"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_free_coupon"
+        app:layout_constraintStart_toStartOf="@+id/product_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_free_coupon"
+        app:srcCompat="@mipmap/coupen" />
+
+    <TextView
+        android:id="@+id/tv_free_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free 2 Coupons"
+        android:textColor="#8000FF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/free_coupon_icon"
+        app:layout_constraintTop_toBottomOf="@+id/product_title" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:text="Rs.49999/-"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_free_coupon" />
+
+    <TextView
+        android:id="@+id/offers_applied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:text="Offers Applied"
+        android:textColor="#15FA05"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_price" />
+
+
+    <TextView
+        android:id="@+id/paymet_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cash on Delivery"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ratings"
+        app:layout_constraintTop_toBottomOf="@+id/offers_applied" />
+
+
+    <ImageButton
+        android:id="@+id/remove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_shape"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:src="@mipmap/bin"
+        android:textStyle="bold"
+        android:tint="@color/GrayBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/paymet_method"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/product_title" />
+
+    <LinearLayout
+        android:id="@+id/ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="#00B512"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/paymet_method"
+        app:layout_constraintStart_toStartOf="@+id/free_coupon_icon"
+        app:layout_constraintTop_toBottomOf="@+id/product_title">
+
+        <TextView
+            android:id="@+id/ratings_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="4.5"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@mipmap/star"
+            android:tint="@color/colorAccent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

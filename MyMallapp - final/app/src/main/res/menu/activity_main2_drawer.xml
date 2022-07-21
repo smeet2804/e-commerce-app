@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_mall"
+            android:icon="@mipmap/ic_store_mall_directory_24px"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@mipmap/magni"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_my_orders"
+            android:icon="@mipmap/my_orders"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_my_cart"
+            android:icon="@mipmap/cart_black"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@mipmap/my_account"
+            android:title="My Account"
+            />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@mipmap/whatsapp1600"
+            android:title="Whatsapp Us"
+            />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/logout"
+            android:title="Log out"
+            />
+
+    </group>
+
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "334682438421",
+    "firebase_url": "https://my-mall-af18c.firebaseio.com",
+    "project_id": "my-mall-af18c",
+    "storage_bucket": "my-mall-af18c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334682438421:android:2a630d01290df59cadc71c",
+        "android_client_info": {
+          "package_name": "com.example.mymallapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334682438421-pg2sse5ua5q28anu28f6vt7a0b9ogird.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhcG5CBsnzqx7ecBzVMTxUMDI8bROIRao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334682438421-pg2sse5ua5q28anu28f6vt7a0b9ogird.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
